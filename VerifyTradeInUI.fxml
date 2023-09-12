@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VerifyTradeInController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #9DD0D1;">
+         <children>
+            <TextField fx:id="YearField" layoutX="718.0" layoutY="107.0" prefHeight="50.0" prefWidth="688.0" promptText="Year">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <ChoiceBox fx:id="MakeDropdown" layoutX="718.0" layoutY="197.0" prefHeight="50.0" prefWidth="688.0" />
+            <TextField fx:id="ModelField" layoutX="718.0" layoutY="287.0" prefHeight="50.0" prefWidth="688.0" promptText="Model">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="MileageField" layoutX="718.0" layoutY="377.0" prefHeight="50.0" prefWidth="688.0" promptText="Mileage">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ColorField" layoutX="718.0" layoutY="467.0" prefHeight="50.0" prefWidth="688.0" promptText="Color">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #00AA83;" width="1920.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="34.0" layoutY="1046.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #00AA83;" width="1920.0" />
+            <Text layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tucker's Cars,LLC">
+               <font>
+                  <Font name="MV Boli" size="64.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="75.0" fitWidth="158.0" layoutX="548.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Assets/OriginalCarArt.png" />
+               </image>
+            </ImageView>
+            <ChoiceBox fx:id="BodyConDropdown" layoutX="908.0" layoutY="557.0" prefHeight="50.0" prefWidth="500.0" />
+            <ChoiceBox fx:id="MechConDropdown" layoutX="908.0" layoutY="647.0" prefHeight="50.0" prefWidth="500.0" />
+            <Text layoutX="512.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="512.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="512.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="512.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="512.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mileage">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="512.0" layoutY="687.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mechanical Condition">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="512.0" layoutY="597.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Body Condition">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ValueField" alignment="CENTER" editable="false" layoutX="701.0" layoutY="813.0" prefHeight="87.0" prefWidth="520.0" promptText="\$000,000.00">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </TextField>
+            <Button fx:id="ClearButton" layoutX="348.0" layoutY="920.0" mnemonicParsing="false" onAction="#clear" prefHeight="86.0" prefWidth="440.0" text="CLEAR">
+               <font>
+                  <Font name="MV Boli" size="48.0" />
+               </font>
+            </Button>
+            <Button fx:id="SaveButton" layoutX="1190.0" layoutY="920.0" mnemonicParsing="false" onAction="#getValue" prefHeight="86.0" prefWidth="440.0" text="GET VALUE">
+               <font>
+                  <Font name="MV Boli" size="48.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="ReturnArrow" disable="true" fitHeight="100.0" fitWidth="100.0" layoutX="1821.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Assets/ReturnIcon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ReturnButton" layoutX="1820.0" layoutY="80.0" mnemonicParsing="false" onAction="#pageReturn" prefHeight="100.0" prefWidth="100.0">
+               <font>
+                  <Font name="MV Boli" size="48.0" />
+               </font>
+            </Button>
+            <Text layoutX="1825.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RETURN" textAlignment="CENTER">
+               <font>
+                  <Font name="MV Boli" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="910.0" layoutY="804.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RecieptController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #9DD0D1;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #00AA83;" width="1920.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="34.0" layoutY="1046.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #00AA83;" width="1920.0" />
+            <Text layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tucker's Cars,LLC">
+               <font>
+                  <Font name="MV Boli" size="64.0" />
+               </font>
+            </Text>
+            <Text layoutX="1849.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="SansSerif Regular" size="48.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="75.0" fitWidth="158.0" layoutX="548.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Assets/OriginalCarArt.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ReturnButton" layoutX="1820.0" layoutY="79.0" mnemonicParsing="false" onAction="#pageReturn" prefHeight="100.0" prefWidth="100.0">
+               <font>
+                  <Font name="MV Boli" size="48.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="ReturnArrow" disable="true" fitHeight="100.0" fitWidth="100.0" layoutX="1821.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Assets/ReturnIcon.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="1825.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RETURN" textAlignment="CENTER">
+               <font>
+                  <Font name="MV Boli" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="570.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price of Car">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <TextField fx:id="vehiclePriceField" editable="false" layoutX="900.0" layoutY="200.0" prefHeight="60.0" prefWidth="550.0" promptText="Price of Car">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="salesTaxField" editable="false" layoutX="900.0" layoutY="260.0" prefHeight="60.0" prefWidth="550.0" promptText="Sales Tax (8%)">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dealershipFeeField" editable="false" layoutX="900.0" layoutY="320.0" prefHeight="60.0" prefWidth="550.0" promptText="Dealership Fee">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tagFeeField" editable="false" layoutX="900.0" layoutY="380.0" prefHeight="60.0" prefWidth="550.0" promptText="Tag Fee">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="commissionField" editable="false" layoutX="900.0" layoutY="720.0" prefHeight="60.0" prefWidth="550.0" promptText="Salesperson Commission">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="totalField" editable="false" layoutX="900.0" layoutY="440.0" prefHeight="60.0" prefWidth="550.0" promptText="Total">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dateOfSaleField" editable="false" layoutX="900.0" layoutY="600.0" prefHeight="60.0" prefWidth="550.0" promptText="Date of Sale">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="SalespersonIDField" editable="false" layoutX="900.0" layoutY="660.0" prefHeight="60.0" prefWidth="550.0" promptText="Salesperson ID">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="couponField" editable="false" layoutX="569.0" layoutY="840.0" prefHeight="60.0" prefWidth="881.0" promptText="Issue a Coupon for a Free Car Wash">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </TextField>
+            <Text layoutX="570.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Sale">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="570.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Tax">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="570.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealership Fee">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="570.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Fee">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="786.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+               <font>
+                  <Font name="SansSerif Bold" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="570.0" layoutY="703.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID of Salesperson">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="570.0" layoutY="765.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commission">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+            <Button fx:id="SaveButton" layoutX="740.0" layoutY="930.0" mnemonicParsing="false" onAction="#pageReturn" prefHeight="86.0" prefWidth="440.0" text="RETURN TO HOME">
+               <font>
+                  <Font name="MV Boli" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
